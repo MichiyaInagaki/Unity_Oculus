@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/BedriddenVR.unity
-    guid: 60f879bdc2bd6ae42ae4148ee0d77c53
+    path: Assets/Scenes/BedriddenVR_exp1.unity
+    guid: f080f116ce8d45b4e864c70ae0707a73
   m_configObjects: {}
