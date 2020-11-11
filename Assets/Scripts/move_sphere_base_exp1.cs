@@ -36,11 +36,11 @@ public class move_sphere_base_exp1 : MonoBehaviour
     void Update()
     {
         //デバッグ用
-        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger) && OVRInput.Get(OVRInput.Button.PrimaryTouchpad))
-        {
-            debug_count++;
-            debug_count %= DEBUG_NUM;
-        }
+        //if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger) && OVRInput.Get(OVRInput.Button.PrimaryTouchpad))
+        //{
+        //    debug_count++;
+        //    debug_count %= DEBUG_NUM;
+        //}
 
         //HMD角度取得
         roll = angle.GetComponent<getTracking>().roll;
@@ -48,15 +48,14 @@ public class move_sphere_base_exp1 : MonoBehaviour
         yaw = angle.GetComponent<getTracking>().yaw;
 
         //オフセットとる
-        if (OVRInput.GetDown(OVRInput.Button.PrimaryTouchpad) && Input.GetKey(KeyCode.Escape))
-        {
-            offset_roll = roll;
-            offset_pitch = pitch;
-            offset_yaw = yaw;
-        }
+        //if (OVRInput.GetDown(OVRInput.Button.PrimaryTouchpad) && Input.GetKey(KeyCode.Escape))
+        //{
+        //    offset_roll = roll;
+        //    offset_pitch = pitch;
+        //    offset_yaw = yaw;
+        //}
 
         ////Debug.Log
-        //str = "sigma1_roll: " + sigma1_roll.ToString("f1") + " pitch: " + sigma1_pitch.ToString("f1") + " yaw: " + sigma1_yaw.ToString("f1") + " num: " + debug_count.ToString();
         str = "Debug count: " + debug_count.ToString();
         score_object.GetComponent<TextMesh>().text = str;
 
@@ -66,7 +65,7 @@ public class move_sphere_base_exp1 : MonoBehaviour
             case 0:
                 //roll, pitch, yaw固定＝全トラッキング×    //0がHMD座標に完全追従なのでトラッキング無効化（yawのみyaw代入で無効化）
                 newAngle.x = 0;     //×
-                newAngle.y = yaw;   //×
+                newAngle.y = yaw+20;   //×
                 newAngle.z = 0;     //×
                 break;
             case 1:

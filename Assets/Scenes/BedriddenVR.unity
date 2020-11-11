@@ -127,6 +127,34 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1358301902}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &211080422 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: 126d619cf4daa52469682f85c1378b4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2086978926}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &211080423 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400002, guid: 126d619cf4daa52469682f85c1378b4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2086978926}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &211080424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211080422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e3020852188ccd4ca747f4cfd9031d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score_object: {fileID: 805552299}
+  roll: 0
+  pitch: 0
+  yaw: 0
 --- !u!1 &274672160
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,35 +200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score_object: {fileID: 2118815207}
   sphere_base: {fileID: 1814076139}
-  angle: {fileID: 693739248}
---- !u!1 &693739248 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 126d619cf4daa52469682f85c1378b4a,
-    type: 3}
-  m_PrefabInstance: {fileID: 2086978926}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &693739249 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: 126d619cf4daa52469682f85c1378b4a,
-    type: 3}
-  m_PrefabInstance: {fileID: 2086978926}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &693739250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 693739248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e3020852188ccd4ca747f4cfd9031d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score_object: {fileID: 805552299}
-  roll: 0
-  pitch: 0
-  yaw: 0
+  angle: {fileID: 211080422}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,7 +383,7 @@ Transform:
   m_LocalPosition: {x: -15, y: 0, z: 50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 693739249}
+  m_Father: {fileID: 2086978927}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
@@ -498,7 +498,7 @@ Transform:
   m_LocalPosition: {x: -15, y: -5.2, z: 50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 693739249}
+  m_Father: {fileID: 2086978927}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!102 &1166988717
@@ -592,7 +592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphere100: {fileID: 28197281}
-  angle: {fileID: 693739248}
+  angle: {fileID: 211080422}
 --- !u!4 &1249143976
 Transform:
   m_ObjectHideFlags: 0
@@ -730,13 +730,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1814076139}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1358301903}
-  m_Father: {fileID: 693739249}
-  m_RootOrder: 3
+  m_Father: {fileID: 211080423}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2086978926
 PrefabInstance:
@@ -795,6 +795,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+--- !u!4 &2086978927 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400006, guid: 126d619cf4daa52469682f85c1378b4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2086978926}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2118815207
 GameObject:
   m_ObjectHideFlags: 0
@@ -824,7 +830,7 @@ Transform:
   m_LocalPosition: {x: -15, y: -2.6, z: 50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 693739249}
+  m_Father: {fileID: 2086978927}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!102 &2118815209
@@ -835,7 +841,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2118815207}
-  m_Text: test
+  m_Text: hoge
   m_OffsetZ: 0
   m_CharacterSize: 0.2
   m_LineSpacing: 1
