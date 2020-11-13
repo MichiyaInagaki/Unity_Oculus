@@ -843,7 +843,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1249143974}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d4a336b67a6d8748b89b3e8e2dfd8f7, type: 3}
+  m_Script: {fileID: 11500000, guid: 7837a4c5f369a634dbb5207746e5267c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   score_object1: {fileID: 805552299}
@@ -853,22 +853,31 @@ MonoBehaviour:
   MASK_right: {fileID: 1680364855}
   MASK_left: {fileID: 627782145}
   audioSource: {fileID: 1475674644}
-  sound1: {fileID: 8300000, guid: bb7310581a50c014ebeba00469c7dc19, type: 3}
-  sound2: {fileID: 8300000, guid: 8f0507a4433483a44909797d7b6c872b, type: 3}
-  sound3: {fileID: 8300000, guid: 04439835c8b37ea4e93825119bdff5f8, type: 3}
-  sound4: {fileID: 8300000, guid: 1b18857f426452f40a0776c6eaa149bb, type: 3}
-  sound5: {fileID: 8300000, guid: 1b6d3784349ea10428b2f97fc2673ce2, type: 3}
-  sound6: {fileID: 8300000, guid: 9808fc71ee17779479abc85c340610e5, type: 3}
-  sound7: {fileID: 8300000, guid: 6ccef02c4c7615042b7e945aa4c729eb, type: 3}
-  sound8: {fileID: 8300000, guid: f13d1d88ffea7e944b484742651278fe, type: 3}
-  sound9: {fileID: 8300000, guid: 66012de25b55f6244990f190c0754023, type: 3}
-  sound10: {fileID: 8300000, guid: a5eacf5eae124394a8151c4fea1a9c4b, type: 3}
-  sound_next: {fileID: 8300000, guid: 465b8a708b4ae0b43ac26bc72646f2b4, type: 3}
-  sound_start: {fileID: 8300000, guid: 471f71a1e31de454193be50491b0a941, type: 3}
-  sound_end: {fileID: 8300000, guid: 39e57cfa0d1fa4c44aeae0e812286e2a, type: 3}
-  sound_last: {fileID: 8300000, guid: d594aa5d5306bb847a846cdac7bead6e, type: 3}
+  sound1: {fileID: 8300000, guid: 5b78c3cd15ad4c74298566ac567bcaf2, type: 3}
+  sound2: {fileID: 8300000, guid: 0d254547a05752346907b14af99cafad, type: 3}
+  sound3: {fileID: 8300000, guid: a00411a4498619a43859172a9f6490b1, type: 3}
+  sound4: {fileID: 8300000, guid: 812ffb1a352b9474a97f4967fc8c9702, type: 3}
+  sound5: {fileID: 8300000, guid: f763b3e339059fe458e8a06204757156, type: 3}
+  sound6: {fileID: 8300000, guid: e8f6990d54470fc44ac2abc06fc0c84a, type: 3}
+  sound7: {fileID: 8300000, guid: f50b6fad48b90c5478c99217c96572f4, type: 3}
+  sound8: {fileID: 8300000, guid: 629160d8386376346907acc04dc5e25d, type: 3}
+  sound9: {fileID: 8300000, guid: a9df254cbb5803a49aec4243322632f5, type: 3}
+  sound10: {fileID: 8300000, guid: c0db2e8ce3e5ac043a73ba25907548fa, type: 3}
+  sound_next: {fileID: 8300000, guid: 992b88f9653db7f48af38af22dac9ca6, type: 3}
+  sound_next2: {fileID: 8300000, guid: a108fbe0220c40a43a8068cde1e54cf1, type: 3}
+  sound_next3: {fileID: 8300000, guid: 86586ee0fc0a1314a9b2efb795957713, type: 3}
+  sound_next4: {fileID: 8300000, guid: a0944477cb7e1e34a9d5af5106d34c05, type: 3}
+  sound_next5: {fileID: 8300000, guid: 28e659b6c105cc54a8b13c7f935b39c1, type: 3}
+  sound_start: {fileID: 8300000, guid: fb1db4a4d60741546b9e0feddecd6a4b, type: 3}
+  sound_end: {fileID: 8300000, guid: 9e8f1de4065cdeb48b2e8a0078c86fa9, type: 3}
+  sound_last: {fileID: 8300000, guid: ed6b90b46f79cdf49a5c95886507aa27, type: 3}
   sound_additional: {fileID: 8300000, guid: f8bab74b18e8462409893f32585d91e1, type: 3}
-  sound_error: {fileID: 8300000, guid: cd11239b6b83ffc4094420f3d02eeb24, type: 3}
+  sound_error: {fileID: 8300000, guid: e24d8b84bac203e42ab7729a0e13af19, type: 3}
+  sound_call1: {fileID: 8300000, guid: 158f97516b58f874f816c99e81e22788, type: 3}
+  sound_call2: {fileID: 8300000, guid: d759968f4cfd8634a8412e03232a8b4e, type: 3}
+  sound_call3: {fileID: 8300000, guid: 1a66408c813f0de418b6ca0506a6c4b2, type: 3}
+  sound_call4: {fileID: 8300000, guid: 5c1e3865a4620ec4c83ad36f4e4a5fa8, type: 3}
+  sound_call5: {fileID: 8300000, guid: 5de1f249d9604534784160e1c25a2043, type: 3}
 --- !u!4 &1249143976
 Transform:
   m_ObjectHideFlags: 0

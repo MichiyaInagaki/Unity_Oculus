@@ -6,7 +6,7 @@ using System;
 using System.Text;
 using System.IO;
 
-public class move_sphere100_exp1 : MonoBehaviour
+public class move_sphere100_exp1_v2 : MonoBehaviour
 {
     public GameObject score_object1 = null; // Textオブジェクト
     public GameObject score_object2 = null; // Textオブジェクト
@@ -26,11 +26,21 @@ public class move_sphere100_exp1 : MonoBehaviour
     public AudioClip sound9;
     public AudioClip sound10;
     public AudioClip sound_next;
+    public AudioClip sound_next2;
+    public AudioClip sound_next3;
+    public AudioClip sound_next4;
+    public AudioClip sound_next5;
     public AudioClip sound_start;
     public AudioClip sound_end;
     public AudioClip sound_last;
     public AudioClip sound_additional;
     public AudioClip sound_error;
+    public AudioClip sound_call1;
+    public AudioClip sound_call2;
+    public AudioClip sound_call3;
+    public AudioClip sound_call4;
+    public AudioClip sound_call5;
+    //
     private Vector3 newAngle = new Vector3(0, 0, 0);    //回転姿勢格納
     //Σ0座標系＝物理世界における回転角
     private float roll = 0.0f;
@@ -60,11 +70,11 @@ public class move_sphere100_exp1 : MonoBehaviour
         //乱数シード
         UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
         //条件順をランダム生成
-        for(int i = 0; i < condition_order.Length; i++)
+        for (int i = 0; i < condition_order.Length; i++)
         {
             condition_order[i] = i + 1;
         }
-        for(int i = condition_order.Length - 1; i > 0; i--)
+        for (int i = condition_order.Length - 1; i > 0; i--)
         {
             int j = UnityEngine.Random.Range(0, i);
             int temp = condition_order[i];
@@ -95,7 +105,7 @@ public class move_sphere100_exp1 : MonoBehaviour
                     }
                     else
                     {
-                        audioSource.PlayOneShot(sound_next);
+                        CallVoiceCreater2();
                     }
                     condition_angle_roll = condition_order[condition_num] * 10.0f;
                     condition_num++;
@@ -240,7 +250,7 @@ public class move_sphere100_exp1 : MonoBehaviour
         {
             mod_deg = deg;
         }
-        else if(deg > 360)
+        else if (deg > 360)
         {
             mod_deg = deg - 360.0f;
         }
@@ -271,40 +281,98 @@ public class move_sphere100_exp1 : MonoBehaviour
 
     void PlaySound(int num)
     {
+        int call_num = UnityEngine.Random.Range(1, 6);
+        if (call_num == 1 && num < 9 && num > 2)
+        {
+            CallVoiceCreater();
+        }
+        else
+        {
+            switch (num)
+            {
+                case 1:
+                    audioSource.PlayOneShot(sound1);
+                    break;
+                case 2:
+                    audioSource.PlayOneShot(sound2);
+                    break;
+                case 3:
+                    audioSource.PlayOneShot(sound3);
+                    break;
+                case 4:
+                    audioSource.PlayOneShot(sound4);
+                    break;
+                case 5:
+                    audioSource.PlayOneShot(sound5);
+                    break;
+                case 6:
+                    audioSource.PlayOneShot(sound6);
+                    break;
+                case 7:
+                    audioSource.PlayOneShot(sound7);
+                    break;
+                case 8:
+                    audioSource.PlayOneShot(sound8);
+                    break;
+                case 9:
+                    audioSource.PlayOneShot(sound9);
+                    break;
+                case 10:
+                    audioSource.PlayOneShot(sound10);
+                    break;
+                default:
+                    audioSource.PlayOneShot(sound_additional);
+                    break;
+            }
+        }
+    }
+
+    void CallVoiceCreater()
+    {
+        int num = UnityEngine.Random.Range(1, 5);
         switch (num)
         {
             case 1:
-                audioSource.PlayOneShot(sound1);
+                audioSource.PlayOneShot(sound_call1);
                 break;
             case 2:
-                audioSource.PlayOneShot(sound2);
+                audioSource.PlayOneShot(sound_call2);
                 break;
             case 3:
-                audioSource.PlayOneShot(sound3);
+                audioSource.PlayOneShot(sound_call3);
                 break;
             case 4:
-                audioSource.PlayOneShot(sound4);
+                audioSource.PlayOneShot(sound_call4);
                 break;
             case 5:
-                audioSource.PlayOneShot(sound5);
-                break;
-            case 6:
-                audioSource.PlayOneShot(sound6);
-                break;
-            case 7:
-                audioSource.PlayOneShot(sound7);
-                break;
-            case 8:
-                audioSource.PlayOneShot(sound8);
-                break;
-            case 9:
-                audioSource.PlayOneShot(sound9);
-                break;
-            case 10:
-                audioSource.PlayOneShot(sound10);
+                audioSource.PlayOneShot(sound_call5);
                 break;
             default:
-                audioSource.PlayOneShot(sound_additional);
+                break;
+        }
+    }
+
+    void CallVoiceCreater2()
+    {
+        int num = UnityEngine.Random.Range(1, 5);
+        switch (num)
+        {
+            case 1:
+                audioSource.PlayOneShot(sound_next);
+                break;
+            case 2:
+                audioSource.PlayOneShot(sound_next2);
+                break;
+            case 3:
+                audioSource.PlayOneShot(sound_next3);
+                break;
+            case 4:
+                audioSource.PlayOneShot(sound_next4);
+                break;
+            case 5:
+                audioSource.PlayOneShot(sound_next5);
+                break;
+            default:
                 break;
         }
     }
