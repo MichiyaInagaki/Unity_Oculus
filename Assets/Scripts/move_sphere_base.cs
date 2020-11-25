@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class move_sphere_base : MonoBehaviour
 {
-    public GameObject score_object = null; // Textオブジェクト
+    public GameObject score_object1 = null; // Textオブジェクト
+    public GameObject score_object2 = null; // Textオブジェクト
     public GameObject sphere_base;
     public GameObject angle;
     private Vector3 newAngle = new Vector3(0, 0, 0);    //回転姿勢格納
@@ -22,7 +23,8 @@ public class move_sphere_base : MonoBehaviour
     private float offset_pitch = 0.0f;
     private float offset_yaw = 0.0f;
     //デバッグ用
-    private string str = "huga";
+    private string str1 = "huga";
+    private string str2 = "huga";
     private int debug_count;
     private int DEBUG_NUM = 5;
 
@@ -58,10 +60,12 @@ public class move_sphere_base : MonoBehaviour
         //sigma1_pitch = SetOffset(pitch - offset_pitch);
         //sigma1_yaw = SetOffset(yaw - offset_yaw);
 
-        ////Debug.Log
-        //str = "sigma1_roll: " + sigma1_roll.ToString("f1") + " pitch: " + sigma1_pitch.ToString("f1") + " yaw: " + sigma1_yaw.ToString("f1") + " num: " + debug_count.ToString();
-        str = "Debug count: " + debug_count.ToString();
-        score_object.GetComponent<TextMesh>().text = str;
+        //Debug.Log
+        str1 = "roll: " + roll.ToString("f1") + " pitch: " + pitch.ToString("f1") + " yaw: " + yaw.ToString("f1");
+        score_object1.GetComponent<TextMesh>().text = str1;
+        //
+        str2 = "Debug count: " + debug_count.ToString();
+        score_object2.GetComponent<TextMesh>().text = str2;
 
         //補正部分----------------------------------------------------
         switch (debug_count)
