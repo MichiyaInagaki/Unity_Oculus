@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/BedriddenVR_neckmove.unity
-    guid: 1347031aae345c5449d84d68ab781f63
+    path: Assets/Scenes/ShapeDesign.unity
+    guid: 7cfcee16b84265343880da22f0531f55
   m_configObjects: {}
