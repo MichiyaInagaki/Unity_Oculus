@@ -39,7 +39,7 @@ public class ShaderController220 : MonoBehaviour
 		//マテリアル取得用
 		_renderer = GetComponent<Renderer>();
 		//パラメータ初期値
-		Offset_upper = 0.0f;
+		Offset_upper = -0.25f;
 		Offset_lower = 0.0f;
 		ScaleY_upper = 0.01f;
 		ScaleY_lower = 0.01f;
@@ -141,11 +141,21 @@ public class ShaderController220 : MonoBehaviour
 			}
 			if (OVRInput.Get(OVRInput.Button.PrimaryTouchpad))
 			{
-				ScaleY_upper = RangeIn(ScaleY_upper - delta, SCALEY_MIN, SCALEY_MAX);
+				delay_count++;
+				if (delay_count > 3)
+				{
+					delay_count = 0;
+					ScaleY_upper = RangeIn(ScaleY_upper - delta, SCALEY_MIN, SCALEY_MAX);
+				}
 			}
 			if (Input.GetKey(KeyCode.Escape))
 			{
-				ScaleY_upper = RangeIn(ScaleY_upper + delta, SCALEY_MIN, SCALEY_MAX);
+				delay_count++;
+				if (delay_count > 3)
+				{
+					delay_count = 0;
+					ScaleY_upper = RangeIn(ScaleY_upper + delta, SCALEY_MIN, SCALEY_MAX);
+				}
 			}
 		}
 		else
@@ -160,11 +170,21 @@ public class ShaderController220 : MonoBehaviour
 			}
 			if (OVRInput.Get(OVRInput.Button.PrimaryTouchpad))
 			{
-				ScaleY_lower = RangeIn(ScaleY_lower - delta, SCALEY_MIN, SCALEY_MAX);
+				delay_count++;
+				if (delay_count > 3)
+				{
+					delay_count = 0;
+					ScaleY_lower = RangeIn(ScaleY_lower - delta, SCALEY_MIN, SCALEY_MAX);
+				}
 			}
 			if (Input.GetKey(KeyCode.Escape))
 			{
-				ScaleY_lower = RangeIn(ScaleY_lower + delta, SCALEY_MIN, SCALEY_MAX);
+				delay_count++;
+				if (delay_count > 3)
+				{
+					delay_count = 0;
+					ScaleY_lower = RangeIn(ScaleY_lower + delta, SCALEY_MIN, SCALEY_MAX);
+				}
 			}
 		}
 
