@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AjustMASK220
+  m_Name: AjustMASK220_preview
   m_Shader: {fileID: 4800000, guid: 787e70560b6042940a7270fbccca4ab1, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -40,11 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: a747bd1b470a24f4fbedd18cfcea1caf, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MaskTex:
-        m_Texture: {fileID: 2800000, guid: 949b5ed1e07695d4b86758b1f1b0d71e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8147ee448b95a4e428a0137435c6fd68, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskTex_lower:
@@ -80,14 +76,10 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _OffsetX: 0
-    - _OffsetY: 0
-    - _Offset_lower: 0.07
-    - _Offset_upper: -0.43
+    - _Offset_lower: 0.08
+    - _Offset_upper: -0.31
     - _Parallax: 0.02
-    - _Scale: 1
-    - _ScaleX: 1
-    - _ScaleY_lower: 0.7
+    - _ScaleY_lower: 1.18
     - _ScaleY_upper: 0.91
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1

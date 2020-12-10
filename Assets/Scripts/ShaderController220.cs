@@ -22,8 +22,8 @@ public class ShaderController220 : MonoBehaviour
 	//
 	private float OFFSET_UPPER_MIN = -0.5f;
 	private float OFFSET_UPPER_MAX = 0.0f;
-	private float OFFSET_LOWER_MIN = 0.0f;
-	private float OFFSET_LOWER_MAX = 0.5f;
+	private float OFFSET_LOWER_MIN = -0.25f;
+	private float OFFSET_LOWER_MAX = 0.25f;
 	private float SCALEY_MIN = 0.01f;
 	private float SCALEY_MAX = 2.0f;
 	//
