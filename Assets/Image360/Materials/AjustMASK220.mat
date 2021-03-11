@@ -82,13 +82,13 @@ Material:
     - _OcclusionStrength: 1
     - _OffsetX: 0
     - _OffsetY: 0
-    - _Offset_lower: 0.07
-    - _Offset_upper: -0.43
+    - _Offset_lower: 0
+    - _Offset_upper: -0.25
     - _Parallax: 0.02
     - _Scale: 1
     - _ScaleX: 1
-    - _ScaleY_lower: 0.7
-    - _ScaleY_upper: 0.91
+    - _ScaleY_lower: 1.5
+    - _ScaleY_upper: 1.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
